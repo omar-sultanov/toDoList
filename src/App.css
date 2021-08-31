@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500&display=swap');
+.Header{
+    background-color:rgb(21, 56, 56);
+    border-radius: 5px;
+    width: 360px;
+    height: 60px;
+    color: white;
+    font-family: 'New Tegomin', serif;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto ;
+    box-shadow: rgb(41, 80, 53) 0 0 15px 5px;  
+    animation: mymove 4s;
+    animation-iteration-count: infinite;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+}
+@keyframes mymove {
+    0% {color: white;}
+    25% {color: rgb(215, 255, 71);}
+    50% {color: rgb(99, 71, 255);}
+    75% {color: rgb(249, 71, 255);}
+    100% {color: rgb(255, 71, 71);}
   }
-}
+.App{
+    height: 100vh;
+    background-image: url("./images/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
 }
+.PlanList{
+    background-color: rgb(21, 56, 56);
+    border-radius: 5px;
+    opacity: 0.9;
+    width: 400px;
+    display: flex;
+    flex-direction:column;
+    height: 90%;
+    margin-top: 20px;
+    font-family: 'Exo', sans-serif;
+    letter-spacing: 3px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  
+}
+.Plan{
+    border-radius: 5px;
+    width: 360px;
+    height: 30px;
+    color:tomato;
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.buttons i{
+    padding: 5px;
+    background-color: transparent;
+    font-size: 16px;
+}
+.buttons button{
+    background-color: transparent;
+    border: none;
+    color: tomato;
+    outline: none;
+
+}
+.AddPlan input{
+    padding: 10px;
+    width: 260px;
+    border-radius:5px;
+    border:solid black 1px;
+    font-family: 'New Tegomin', serif;
+    background-color: rgb(7, 5, 5);
+    box-shadow: rgb(1, 59, 19) 0 0 15px 5px; 
+    color: white;
+    outline: none;
+}
+.AddPlan button{
+    padding: 10px;
+    border-radius:5px;
+    border:solid tomato 1px; 
+    margin-left: 5px;
+    background-color: tomato;
+    color: white;
+    font-family: 'New Tegomin', serif;
+    box-shadow: rgb(11, 230, 77) 0 0 15px 5px; 
+    outline: none;
+}
+.AddPlan{
+    text-align: center;
+    margin-bottom: 20px;
+  
+}
+.no-plans{
+    text-align: center;
+    color: tomato;
 }
